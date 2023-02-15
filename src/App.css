@@ -1,0 +1,51 @@
+:root {
+  --darkThemeText: #d1ccc0;
+  --darkThemeBg: #3d3d3d;
+  --lightThemeText: #d1ccc0;
+  --lightThemeBg: #cd6133;
+  --additional: #cd6133;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.section {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10vh;
+}
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 56.5%;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 50.5%;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media screen and (max-width: 425px) {
+  html,
+  body {
+    font-size: 40.5%;
+    font-family: "Poppins", sans-serif;
+  }
+}

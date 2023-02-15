@@ -1,0 +1,20 @@
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkThemeBg);
+}
+.projects-corners {
+  width: 90%;
+  min-height: 90vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  row-gap: 5rem;
+  column-gap: 5rem;
+  place-items: center;
+  padding: 3rem 2rem;
+}

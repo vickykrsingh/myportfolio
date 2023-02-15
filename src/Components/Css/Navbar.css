@@ -1,0 +1,156 @@
+/* grand parent nav tag */
+nav {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+  background-color: var(--darkThemeBg);
+}
+/* parent tag inside grand parent  */
+.navbar > section {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* nav bar left side */
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--additional);
+  gap: 5rem;
+}
+.nav-left h1 {
+  display: flex;
+  font-size: 4rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+/* nav left menubar ul */
+.menubar {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.menubar li Link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.links,
+.nav-icon {
+  color: var(--lightThemeText);
+  transition: 0.3s ease all;
+}
+/* message icon */
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.message-icon {
+  font-size: 3.5rem;
+  color: var(--lightThemeText);
+  transition: 0.3s ease all;
+}
+/* hamburger icon  */
+.barSection {
+  display: none;
+  font-size: 4.5rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--additional);
+}
+/* hover  */
+.links:hover,
+.nav-icon:hover {
+  color: var(--additional);
+}
+.nav-icon:hover,
+.message-icon:hover {
+  color: var(--additional);
+}
+
+@media screen and (max-width: 768px) {
+  /* hamburger */
+  .barSection {
+    display: flex;
+    z-index: 999;
+  }
+  /* menu bar ul */
+  .menubar {
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--darkThemeBg);
+    flex-direction: column;
+    gap: 5rem;
+    box-shadow: 2px 2px 2px var(--additional);
+    transition: 0.5s ease all;
+  }
+  /* menu show and hide */
+  .menubarShow {
+    top: 0vh;
+  }
+  .menubarHide {
+    top: -60vh;
+  }
+  /* message icon */
+  .message {
+    position: absolute;
+    top: -60vh;
+    z-index: 900;
+    transition: 0.5s ease all;
+  }
+  /* message icon show and hide */
+  .messageShow {
+    top: 3.5vh;
+  }
+  .messageHide {
+    top: -60vh;
+  }
+  .popupModel {
+    width: 90% !important;
+    left: 5% !important;
+  }
+}
+
+.popupModel {
+  width: 50%;
+  height: 70vh;
+  background-color: var(--additional);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  display: none;
+  z-index: 999;
+}
+.cross-icon-model {
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,113 @@
+/* home grand parent container */
+.home {
+  background-color: var(--darkThemeBg);
+  color: var(--darkThemeText);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* corners container */
+.home-corners {
+  width: 90%;
+  min-height: 90vh;
+  position: relative;
+  padding: 2px;
+  display: flex;
+}
+/* home left and home right */
+.home-left,
+.home-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+/* home left */
+.home-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home-left h1 {
+  font-size: 5rem;
+  color: var(--additional);
+}
+span {
+  color: var(--additional);
+}
+.home-left p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.home-left p {
+  font-size: 2rem;
+}
+.home-left .main-btn {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.home-left .main-btn a {
+  width: 13rem;
+  height: 4.5rem;
+  background-color: var(--darkThemeBg);
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 2px #000;
+  border: 2px solid var(--additional);
+  transition: 0.5s ease all;
+}
+.home-left .main-btn a:hover {
+  background-color: var(--additional);
+}
+/* home right */
+.home-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-right img {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+  border: 2px solid var(--additional);
+  border-radius: 50%;
+  background-color: var(--additional);
+}
+/* tablet device  */
+@media screen and (max-width: 768px) {
+  .home-corners {
+    flex-direction: column;
+    gap: 10rem;
+    padding: 4rem 2rem;
+  }
+  .home-left,
+  .home-right {
+    width: 90%;
+  }
+  .home-right img {
+    width: 39rem;
+    height: 39rem;
+  }
+}
+/* mobile device */
+@media screen and (max-width: 432px) {
+  .home-corners{
+    gap: 12rem;
+    padding-top: 8rem;
+  }
+  .home-left,
+  .home-right {
+    width: 98%;
+  }
+  .home-right img {
+    /* width: 40rem;
+    min-width: 50rem;
+    min-height: 50rem; */
+    aspect-ratio: 1/1;
+  }
+}

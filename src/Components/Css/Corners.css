@@ -1,0 +1,26 @@
+.vLeft,
+.vRight {
+  height: 10rem;
+  width: 2px;
+  color: var(--additional);
+  background-color: var(--additional);
+  position: absolute;
+}
+.hLeft,
+.hRight {
+  width: 10rem;
+  height: 2px;
+  color: var(--additional);
+  background-color: var(--additional);
+  position: absolute;
+}
+.vLeft,
+.hLeft {
+  top: 0;
+  left: 0;
+}
+.vRight,
+.hRight {
+  bottom: 0;
+  right: 0;
+}

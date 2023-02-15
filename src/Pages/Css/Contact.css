@@ -1,0 +1,86 @@
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkThemeBg);
+}
+.contact-corners {
+  width: 90%;
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+  padding: 0rem 2rem;
+}
+.contact-left {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.contact-left h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.contact-left p {
+  font-size: 1.9rem;
+}
+.emails {
+  display: flex;
+  gap: 1rem;
+  box-shadow: 0px 0px 2px var(--additional);
+  width: fit-content;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  margin-top: 2rem;
+}
+.emails .text {
+  display: flex;
+  flex-direction: column;
+}
+.emails .text p,
+.emails .text span {
+  font-size: 1.3rem;
+}
+.emails .icon {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem;
+}
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 3.3rem;
+  margin-top: 2rem;
+  transition: 0.5s ease all;
+}
+.social-icons a {
+  color: #fff;
+}
+.social-icons .icon:hover {
+  color: var(--additional);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-corners {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  .contact-left {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
