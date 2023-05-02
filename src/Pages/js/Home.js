@@ -1,7 +1,7 @@
 import React from "react";
 import "../Css/Home.css";
 import Corners from "../../Components/js/Corners.js";
-import heroImg from "../../images/myimg.jpg";
+import heroImg from "../../images/main.png";
 
 export default function Home() {
   return (

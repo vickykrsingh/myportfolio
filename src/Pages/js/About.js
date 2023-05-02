@@ -1,7 +1,7 @@
 import React from "react";
 import Corners from "../../Components/js/Corners.js";
 import "../Css/About.css";
-import AboutImg from "../../images/myimg.jpg";
+import AboutImg from "../../images/about.png";
 import ProgressBar from "react-animated-progress-bar";
 
 export default function About() {

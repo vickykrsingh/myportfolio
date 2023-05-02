@@ -1,6 +1,6 @@
 /* home grand parent container */
 .home {
-  background-color: var(--darkThemeBg);
+  /* background-color: var(--darkThemeBg); */
   color: var(--darkThemeText);
   display: flex;
   align-items: center;
@@ -71,13 +71,18 @@ span {
   justify-content: center;
 }
 .home-right img {
-  width: 40rem;
-  height: 40rem;
+  width: 42rem;
+  height: 46rem;
   object-fit: cover;
-  border: 2px solid var(--additional);
-  border-radius: 50%;
-  background-color: var(--additional);
 }
+
+@media screen and (min-width: 1200px) {
+  .home-right img {
+    width: 58rem;
+    height: 59rem;
+  }
+}
+
 /* tablet device  */
 @media screen and (max-width: 768px) {
   .home-corners {
@@ -90,8 +95,8 @@ span {
     width: 90%;
   }
   .home-right img {
-    width: 39rem;
-    height: 39rem;
+    width: 57rem;
+    height: 60rem;
   }
 }
 /* mobile device */
@@ -105,9 +110,11 @@ span {
     width: 98%;
   }
   .home-right img {
+    width: 53rem;
+    height: 55rem;
     /* width: 40rem;
     min-width: 50rem;
     min-height: 50rem; */
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
   }
 }

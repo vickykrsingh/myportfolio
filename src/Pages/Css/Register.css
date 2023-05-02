@@ -1,0 +1,109 @@
+.register {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--darkThemeBg); */
+  }
+  .register-corners {
+    width: 90%;
+    min-height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+.form-wrapper{
+    display:  flex;
+    width: 60rem;
+    max-width: 100%;
+    min-height: 40vh;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--additional);
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    padding: 3rem 2rem;
+    justify-content: center;
+    /* box-shadow: 5px 5px 5px var(--additional); */
+}
+.form-heading-wrapper,.form-form-top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-heading{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffff;
+}
+.form-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.input-wrapper{
+    width: 100%;
+}
+.input-wrapper input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.7rem,0.5rem;
+    border-bottom: 2px solid var(--lightThemeText);
+    font-weight: 600;
+    color: var(--lightThemeText);
+}
+.input-wrapper input::placeholder{
+    color: var(--additional);
+    font-weight: 600;
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+.input-wrapper label{
+    position: absolute;
+    bottom: 0.25rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--lightThemeText);
+    transition: 0.5s ease-in-out all;
+}
+.shiftUp{
+    transform: translateY(-2rem);
+}
+
+.submit-wrapper{
+    width: 100%;
+}
+
+.submit-wrapper button{
+    border: 2px solid #fff;
+    height: 4rem;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffff;
+    text-transform: uppercase;
+    background-color: var(--additional);
+    transition: 0.5s ease-in all;
+}
+.submit-wrapper button:hover{
+    background-color: #ffff;
+    color: var(--additional);
+}
+
+@media only screen and (max-width:432px) {
+    .register-corners{
+        width: 98%;
+        padding: 0.5rem;
+    }
+}

@@ -76,6 +76,22 @@ export default function Navbar(props) {
                   </span>
                 </Link>
               </li>
+              <li>
+                <Link to="/login">
+                  <i className="fa-solid fa-book-open-reader nav-icon"></i>{" "}
+                  <span className="links" onClick={() => setMenu(false)}>
+                    LOGIN
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/register">
+                  <i className="fa-solid fa-book-open-reader nav-icon"></i>{" "}
+                  <span className="links" onClick={() => setMenu(false)}>
+                    REGISTER
+                  </span>
+                </Link>
+              </li>
             </ul>
           </section>
           <section

@@ -9,7 +9,7 @@ nav {
   align-items: center;
   justify-content: center;
   z-index: 900;
-  background-color: var(--darkThemeBg);
+  /* background-color: var(--darkThemeBg); */
 }
 /* parent tag inside grand parent  */
 .navbar > section {
@@ -88,7 +88,7 @@ nav {
   color: var(--additional);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   /* hamburger */
   .barSection {
     display: flex;
@@ -100,7 +100,7 @@ nav {
     top: 0vh;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 65vh;
     background-color: var(--darkThemeBg);
     flex-direction: column;
     gap: 5rem;
@@ -112,7 +112,7 @@ nav {
     top: 0vh;
   }
   .menubarHide {
-    top: -60vh;
+    top: -70vh;
   }
   /* message icon */
   .message {
